@@ -12,4 +12,9 @@ desc 'outputs hello to the terminal'
   task :hola do
     puts "hola de Rake!"
   end
+
+desc 'seed the database with some dummy data'
+  task :seed do
+    require_relative './db/seeds.rb'
+  end
 end
